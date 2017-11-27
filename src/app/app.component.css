@@ -1,0 +1,11 @@
+.sidenav-box {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon{
+    font-size:40px;
+    height:40px;
+    width: 40px;
+  }

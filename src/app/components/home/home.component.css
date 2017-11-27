@@ -1,0 +1,10 @@
+.flexi {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.card {
+    width: 400px;
+}
