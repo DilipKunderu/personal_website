@@ -1,40 +1,40 @@
 <div fxLayout="column" fxFlex>
   <mat-sidenav-container fullscreen>
-    <mat-sidenav #sidenav mode="side" class="sidenav-box">
-      <button mat-button routerLink="/" routerLinkActive="active">HOME</button>
-      <span fxFlex></span>
-      <button mat-button routerLink="/projects" routerLinkActive="active">PROJECTS</button>
-      <span fxFlex></span>
-      <button mat-button routerLink="/resume" routerLinkActive="active">RESUME</button>
-      <span fxFlex></span>
-      <button mat-button routerLink="/contact" routerLinkActive="active">CONTACT</button>
-      <span fxFlex></span>
-      <mat-toolbar color="primary">
-        hi
+      <mat-toolbar fxLayout="row" color="primary">
+            <button mat-button>
+                <mat-icon class="icon" svgIcon="github"></mat-icon>
+              </button>
+              <span fxFlex></span>
+              <button mat-button>
+                <mat-icon class="icon" svgIcon="linkedin"></mat-icon>
+              </button>
+              <span fxFlex></span>
+              <button mat-button>
+                <mat-icon class="icon" svgIcon="medium"></mat-icon>
+              </button>
+              <span fxFlex></span>
+              <button mat-button>
+                <mat-icon class="icon" svgIcon="facebook"></mat-icon>
+              </button>
+              <span fxFlex></span>
+          <button type="button" mat-button (click)="sidenav.open()">
+            Open sidenav  
+            </button>
       </mat-toolbar>
+    <mat-sidenav #sidenav mode="side" class="sidenav-box" color="primary">
+        <mat-toolbar color="primary">
+            hi
+          </mat-toolbar>
+      <button mat-raised-button routerLink="/" routerLinkActive="active">HOME</button>
+      <span fxFlex></span>
+      <button mat-raised-button routerLink="/projects" routerLinkActive="active">PROJECTS</button>
+      <span fxFlex></span>
+      <button mat-raised-button routerLink="/resume" routerLinkActive="active">RESUME</button>
+      <span fxFlex></span>
+      <button mat-raised-button routerLink="/contact" routerLinkActive="active">CONTACT</button>
+      <span fxFlex></span>
     </mat-sidenav>
 
     <router-outlet></router-outlet>
-    <mat-toolbar color="primary">
-        <button mat-button>
-            <mat-icon class="icon" svgIcon="github"></mat-icon>
-          </button>
-          <span fxFlex></span>
-          <button mat-button>
-            <mat-icon class="icon" svgIcon="linkedin"></mat-icon>
-          </button>
-          <span fxFlex></span>
-          <button mat-button>
-            <mat-icon class="icon" svgIcon="medium"></mat-icon>
-          </button>
-          <span fxFlex></span>
-          <button mat-button>
-            <mat-icon class="icon" svgIcon="facebook"></mat-icon>
-          </button>
-          <span fxFlex></span>
-      <button type="button" mat-button (click)="sidenav.open()">
-        Open sidenav
-      </button>
-    </mat-toolbar>
   </mat-sidenav-container>
 </div>

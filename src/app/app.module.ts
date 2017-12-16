@@ -5,6 +5,8 @@ import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import {MaterialComponents} from './material-components.module';
 import {FlexLayoutModule} from '@angular/flex-layout';
+import {MatExpansionModule} from '@angular/material/expansion';
+import 'hammerjs';
 
 // import {MatSidenavModule} from '@angular/material/sidenav';
 import { routes } from './app.router';
