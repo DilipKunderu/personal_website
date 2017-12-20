@@ -1,14 +1,15 @@
 import { BrowserModule } from '@angular/platform-browser';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import { NgModule } from '@angular/core';
+import { NgModule, NO_ERRORS_SCHEMA } from '@angular/core';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RouterModule, Routes } from '@angular/router';
 import {MaterialComponents} from './material-components.module';
 import {FlexLayoutModule} from '@angular/flex-layout';
-import {MatExpansionModule} from '@angular/material/expansion';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
+
 import 'hammerjs';
 
-// import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatSidenavModule} from '@angular/material/sidenav';
 import { routes } from './app.router';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 
@@ -34,11 +35,15 @@ import { ProjectsComponent } from './components/projects/projects.component';
     //   routes,
     //   {enableTracing: true}
     // ),
+    MDBBootstrapModule.forRoot(),
     routes,
     HttpClientModule,
     MaterialComponents,
     FlexLayoutModule,
     PdfViewerModule
+  ],
+  schemas: [
+    NO_ERRORS_SCHEMA
   ],
   providers: [],
   bootstrap: [AppComponent]
