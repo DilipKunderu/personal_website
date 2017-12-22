@@ -6,7 +6,6 @@ import { HomeComponent } from './components/home/home.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { GithubspoofComponent } from './githubspoof/githubspoof.component';
 
 const router: Routes = [
     {

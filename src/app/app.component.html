@@ -1,42 +1,70 @@
-<mat-sidenav-container fullscreen style="background: rgba(152, 164, 190, 0.37)">
-      <mat-sidenav style="display:flex; background: rgba(152, 164, 190, 0.37)" fxLayout="column" align="end" #sidenavright mode="side"
+<mat-sidenav-container fullscreen style="background: rgba(97, 111, 139, 0.37)">
+      <mat-sidenav style="display:flex; background: rgba(252, 251, 251, 0.37)" fxLayout="column" align="end" #sidenavright mode="side"
         opened="true">
+        <span fxFlex>
+        </span>
+        <a href="https://www.linkedin.com/in/dilipkun" style="color:#0077B5">
+          <div style="display:flex; align-items: center" fxLayout="column">
+              <mat-icon class="icon" svgIcon="linkedin"></mat-icon>
+              <span fxFlex> </span>
+              LinkedIn
+          </div>
+        </a>
         <span fxFlex></span>
-        <button mat-button routerLink="/" routerLinkActive="active">Home</button>
+        <button mat-raised-button color="primary" routerLink="/resume" routerLinkActive="active">
+          <div style="display:flex; align-items: center" fxLayout="column">
+              <mat-icon>insert_drive_file'</mat-icon>
+              <span fxFlex></span>
+              Resume
+          </div></button>
         <span fxFlex></span>
-        <button mat-button routerLink="/projects" routerLinkActive="active">Projects</button>
-        <span fxFlex></span>
-        <button mat-button routerLink="/resume" routerLinkActive="active">Resume</button>
-        <span fxFlex></span>
-        <button mat-button routerLink="/contact" routerLinkActive="active">Contact</button>
-        <span fxFlex></span>
-        <a href="https://www.github.com/DilipKunderu">
-          <button mat-button>
-            <mat-icon class="icon" svgIcon="github"></mat-icon>
-          </button>
+        
+        <a href="https://www.github.com/DilipKunderu" style="color:black">
+              <div style="display:flex; align-items: center" fxLayout="column">
+                  <mat-icon class="icon" svgIcon="github"></mat-icon>
+                  Github
+              </div>  
         </a>
       
         <span fxFlex></span>
-        <a href="https://www.linkedin.com/in/dilipkun">
-          <button mat-button>
-            <mat-icon class="icon" svgIcon="linkedin"></mat-icon>
-          </button>
-        </a>
+       
+        <button mat-raised-button color="warn" routerLink="/projects" routerLinkActive="active">
+          <div style="display:flex; align-items: center" fxLayout="column">
+              <mat-icon>home</mat-icon>
+              <span fxFlex></span>
+              Projects
+          </div></button>
+        <span fxFlex></span>
       
         <span fxFlex></span>
-        <a href="https://medium.com/@dilipkunderu">
-          <button mat-button>
-            <mat-icon class="icon" svgIcon="medium"></mat-icon>
-          </button>
+        <a href="https://medium.com/@dilipkunderu" style="color: #00ab6c">
+          <div style="display:flex; align-items: center" fxLayout="column">
+              <mat-icon class="icon" svgIcon="medium"></mat-icon>
+              Medium
+          </div>
         </a>
-      
         <span fxFlex></span>
-        <a href="https://www.facebook.com/kunderu.dilip">
-          <button mat-button>
-            <mat-icon class="icon" svgIcon="facebook"></mat-icon>
-          </button>
+        <button mat-raised-button color="accent" routerLink="/" routerLinkActive="active">
+          <div style="display:flex; align-items: center" fxLayout="column">
+              <mat-icon>home</mat-icon>
+              <span fxFlex></span>
+              Home
+          </div>
+         </button>
+      <span fxFlex></span>
+        <a href="https://www.facebook.com/kunderu.dilip" style="color: #3b5998">
+          <div style="display:flex; align-items: center" fxLayout="column">
+              <mat-icon class="icon" svgIcon="facebook"></mat-icon>
+              Facebook
+          </div>
         </a>
-      
+        <span fxFlex></span>
+        <button mat-button routerLink="/contact" routerLinkActive="active">
+          <div style="display:flex; align-items: center" fxLayout="column">
+              <mat-icon>contact_mail</mat-icon>
+              <span fxFlex></span>
+              Contact
+          </div></button>
         <span fxFlex></span>
       </mat-sidenav>
         
