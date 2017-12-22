@@ -6,20 +6,30 @@ import { HomeComponent } from './components/home/home.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { GithubspoofComponent } from './githubspoof/githubspoof.component';
 
 const router: Routes = [
-    {path: '',
-    redirectTo: '/home',
-    pathMatch: 'full'},
-    {path: 'home',
-        component: HomeComponent},
-        {path: 'resume',
-        component: ResumeComponent},
-        {path: 'projects',
-        component: ProjectsComponent},
-        {path: 'contact',
-        component: ContactComponent},
-
+    {
+        path: '',
+        redirectTo: '/home',
+        pathMatch: 'full'
+    },
+    {
+        path: 'home',
+        component: HomeComponent
+    },
+    {
+        path: 'resume',
+        component: ResumeComponent
+    },
+    {
+        path: 'projects',
+        component: ProjectsComponent
+    },
+    {
+        path: 'contact',
+        component: ContactComponent
+    },
 ];
 
 export const routes: ModuleWithProviders = RouterModule.forRoot(router);

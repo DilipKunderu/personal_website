@@ -1,11 +1,28 @@
 .sidenav-box {
-    width: 100px;
+  background-color: rosybrown;
+    width: 10ex;
+    height: 100%;
     display: flex;
     flex-direction: column;
   }
-  
+
+  .inner-sidenav-content {
+    overflow: auto;
+    position: absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    top:0;
+  }
+
+  .fill {
+    // This fills the remaining space, by using flexbox. 
+    // Every toolbar row uses a flexbox row layout.
+    flex: 1 1 auto;
+  }
+
   .sidenavi {
-    color: rgb(202, 179, 245);
+    height: 100%;
   }
   
   .icon {

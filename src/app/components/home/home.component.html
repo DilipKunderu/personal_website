@@ -1,80 +1,67 @@
-<div class="flexl">
-  <div><!--Carousel Wrapper-->
-    <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
-        <!--First slide-->
-        <mdb-slide>
-            <div class="view hm-black-light">
+<div style="display: flex" fxLayout="column">
+  <div fxFlex="60">
+      <div>
+          <!--Carousel Wrapper-->
+          <mdb-carousel class="carousel slide carousel-fade" [animation]="'fade'">
+            <!--First slide-->
+            <mdb-slide>
+              <div class="view hm-black-light">
                 <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(68).jpg" alt="First slide">
                 <div class="mask waves-light" mdbRippleRadius></div>
-            </div>
-            <div class="carousel-caption">
+              </div>
+              <div class="carousel-caption">
                 <h3 class="h3-responsive">Light mask</h3>
                 <p>First text</p>
-            </div>
-        </mdb-slide>
-        <!--/First slide-->
-        <!--Second slide-->
-        <mdb-slide>
-            <div class="view hm-black-strong">
+              </div>
+            </mdb-slide>
+            <!--/First slide-->
+            <!--Second slide-->
+            <mdb-slide>
+              <div class="view hm-black-strong">
                 <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(6).jpg" alt="Second slide">
                 <div class="mask waves-light" mdbRippleRadius></div>
-            </div>
-            <div class="carousel-caption">
+              </div>
+              <div class="carousel-caption">
                 <h3 class="h3-responsive">Strong mask</h3>
                 <p>Secondary text</p>
-            </div>
-        </mdb-slide>
-        <!--/Second slide-->
-        <!--Third slide-->
-        <mdb-slide>
-            <div class="view hm-black-slight">
+              </div>
+            </mdb-slide>
+            <!--/Second slide-->
+            <!--Third slide-->
+            <mdb-slide>
+              <div class="view hm-black-slight">
                 <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Slides/img%20(9).jpg" alt="Third slide">
                 <div class="mask waves-light" mdbRippleRadius></div>
-            </div>
-            <div class="carousel-caption">
+              </div>
+              <div class="carousel-caption">
                 <h3 class="h3-responsive">Slight mask</h3>
                 <p>Third text</p>
-            </div>
-        </mdb-slide>
-        <!--/Third slide-->
-    </mdb-carousel>
-    <!--/.Carousel Wrapper--></div>
-  <div class="flexi">
-      <mat-card fxFlex="25">
-        <!-- <mat-card-header>
-          <img mat-card-image src="https://lh3.googleusercontent.com/m5Y6rDwzB3DMyvx263x8HbUGb0ZLcPIMu3UEHqES5VYiNlddOJ8rDglcUr2Z5gM0bon6fRsk2j1vvgsoRaaNbfvr8rt8AiMRqHsnTIx2_BglFDGh3XUMXN2V5MDq_LZzYyb1JIvs4p8">
-        </mat-card-header> -->
-      </mat-card>
-      <mat-card fxFlex="55">
-        <mat-accordion>
-            <mat-expansion-panel>
+              </div>
+            </mdb-slide>
+            <!--/Third slide-->
+          </mdb-carousel>
+          <!--/.Carousel Wrapper-->
+        </div>
+  </div>
+  <div fxFlex="40">
+      <div style="display:flex;" fxLayout="row">
+          <mat-accordion>
+              <mat-expansion-panel>
                 <mat-expansion-panel-header>
                   <mat-panel-title>
-                   About Me
+                    About Me
                   </mat-panel-title>
                   <mat-panel-description>
                     A brief Introduction
                   </mat-panel-description>
                 </mat-expansion-panel-header>
-                <p>I am currently pursuing a Masters' degree in Computer Science at the University of Florida. I have exposure to application design and development in a consumer-facing paradigm. Java is my primary workhorse. I have good experience in C++/C, and growing proficiency in JavaScript via Angular and Node, and Python via coursework and polyglot development. I also have containerization experience via Docker and Kubernetes. I am aiming to become a full-stack developer looking for challenges in diverse development paradigms</p>    
+                <p>I am currently pursuing a Masters' degree in Computer Science at the University of Florida. I have exposure to
+                  application design and development in a consumer-facing paradigm. Java is my primary workhorse. I have good
+                  experience in C++/C, and growing proficiency in JavaScript via Angular and Node, and Python via coursework
+                  and polyglot development. I also have containerization experience via Docker and Kubernetes. I am aiming to
+                  become a full-stack developer looking for challenges in diverse development paradigms</p>
               </mat-expansion-panel>
-              <mat-expansion-panel>
-                  <mat-expansion-panel-header>
-                      <mat-panel-title>
-                       About Me
-                      </mat-panel-title>
-                      <mat-panel-description>
-                        A brief Introduction
-                      </mat-panel-description>
-                    </mat-expansion-panel-header>
-                    <p>I am currently pursuing a Masters' degree in Computer Science at the University of Florida. I have exposure to application design and development in a consumer-facing paradigm. Java is my primary workhorse. I have good experience in C++/C, and growing proficiency in JavaScript via Angular and Node, and Python via coursework and polyglot development. I also have containerization experience via Docker and Kubernetes. I am aiming to become a full-stack developer looking for challenges in diverse development paradigms</p>    
-                  
-              </mat-expansion-panel>
-        </mat-accordion>
-        
-      </mat-card>
-      <mat-card fxFlex="20">
-          </mat-card>
-    </div>  
+            </mat-accordion>
+        </div>
+  </div>
 </div>
-

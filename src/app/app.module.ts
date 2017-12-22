@@ -9,7 +9,7 @@ import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import 'hammerjs';
 
-import {MatSidenavModule} from '@angular/material/sidenav';
+import { ActivatedRouteSnapshot, RouterStateSnapshot } from '@angular/router';
 import { routes } from './app.router';
 import { PdfViewerModule } from 'ng2-pdf-viewer';
 
@@ -18,7 +18,6 @@ import { HomeComponent } from './components/home/home.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-
 
 @NgModule({
   declarations: [
@@ -45,7 +44,15 @@ import { ProjectsComponent } from './components/projects/projects.component';
   schemas: [
     NO_ERRORS_SCHEMA
   ],
-  providers: [],
+  providers: [
+    {
+      provide: 'externalUrlRedirectResolver',
+      useValue: (route: ActivatedRouteSnapshot, state: RouterStateSnapshot) =>
+      {
+          window.location.href = (route.data as any).externalUrl;
+      }
+  }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
