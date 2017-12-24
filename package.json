@@ -9,7 +9,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot --target=production"
+    "postinstall": "ng build --aot --target=production",
+    "build.prod": "ng build --aot --prod --progress false --base-href \"https://dilipkunderu.github.io/personal_website/\""
+
   },
   "private": true,
   "dependencies": {
